@@ -1,0 +1,82 @@
+.photobox {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.photobox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photobox .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.4)
+  );
+  z-index: 1;
+}
+
+.photobox .content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.photobox h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.photobox .tagline {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.photobox ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.photobox ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.photobox ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #d4af37; /* gold accent */
+}
+
+.photobox .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.photobox .btn:hover {
+  background: #fff;
+  color: #000;
+}
